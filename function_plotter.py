@@ -1,5 +1,6 @@
 # Import libraries
 from functions import *
+
 from tkinter import ttk
 from ttkthemes import ThemedTk
 import matplotlib
@@ -54,8 +55,5 @@ max_field.grid(row = 3, column = 1, padx = 3, sticky = 'N')
 
 plot_btn.grid(row = 4, columnspan=2, column=0, sticky = 'N')
 canvas.get_tk_widget().grid(row=0, rowspan=5, columnspan=4, column = 4, ipadx=10)
-
-
-
 
 root.mainloop()
