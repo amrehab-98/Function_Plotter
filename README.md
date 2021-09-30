@@ -1,4 +1,4 @@
-# Function_Plotter
+# Function Plotter
 This program is a GUI build using Tkinter.
 It is used to plot functions of x entered by the user.
 
