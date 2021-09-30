@@ -3,8 +3,8 @@ This program is a GUI build using Tkinter.
 It is used to plot functions of x entered by the user.
 
 ## Instructions
-1. The user should input f(x) in the form:
- a*x^b + c*x
+1. The user should input ```f(x)``` in the form:
+ ```a*x^b + c*x```
 where 'a' and 'b' are constants.
 
 2. The user should then enter the minumum and maximum values of x and click plot.
@@ -39,6 +39,14 @@ where 'a' and 'b' are constants.
 
 ![max less than min](./snapshots/max_less_than_min.jpg)
 
+## Unit testing
 
+
+Unit testing is done using unittest.
+
+only ```callback_isdigit(input)``` function was tested.
+
+
+![unit tests results](./snapshots/unit_tests_results.jpg)
  
  
