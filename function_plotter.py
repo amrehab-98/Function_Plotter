@@ -2,6 +2,7 @@
 from tkinter import ttk
 
 import matplotlib
+
 from ttkthemes import ThemedTk
 
 from functions import callback_isdigit, validate
@@ -22,7 +23,7 @@ root.resizable(False, False)
 
 reg_isdigit = root.register(callback_isdigit)
 
-# input fields
+# define input fields
 function_field = ttk.Entry(root, width=35)
 
 min_field = ttk.Entry(root)
@@ -31,13 +32,13 @@ min_field.config(validate="key", validatecommand=(reg_isdigit, "%P"))
 max_field = ttk.Entry(root)
 max_field.config(validate="key", validatecommand=(reg_isdigit, "%P"))
 
-# labels
+# define labels for entry fields
 function_field_label = ttk.Label(
     root, style="Label", text="Enter f(x)\n\t\t\ta*x^b + c*x^d"
 )
 min_field_label = ttk.Label(root, style="Label", text="Minimum")
 max_field_label = ttk.Label(root, style="Label", text="Maximum")
-
+# define plot button
 plot_btn = ttk.Button(
     root,
     text="Plot",
@@ -49,7 +50,7 @@ figure = Figure(figsize=(4, 4), dpi=100)
 subplot = figure.add_subplot(111)
 canvas = FigureCanvasTkAgg(figure)
 
-# pushing everything into the screen
+# pushing everything into the grid
 
 function_field_label.grid(
     row=0, column=0, columnspan=3, sticky="S" + "W", padx=10, pady=5
